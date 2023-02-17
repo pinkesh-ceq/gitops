@@ -6,7 +6,7 @@ metadata:
 spec:
     project: default
     source:
-        repoURL: https://github.com/gagansaini29/gitops.git
+        repoURL: https://github.com/Karandeep0280/gitops.git
         targetRevision: HEAD
         path: django        
     destination:
