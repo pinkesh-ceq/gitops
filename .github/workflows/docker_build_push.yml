@@ -132,7 +132,7 @@ jobs:
       - name: deployment to eks
         run: |
         
-         kubectl cluster-info
+#          kubectl cluster-info
          kubectl apply -f dep.yml
          kubectl get pods
       
