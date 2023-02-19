@@ -120,7 +120,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Run kubectl
-        uses: Karandeep0280/gitops/django/kubernetes@main
+        uses: Karandeep0280/gitops/django@main
         with:
           command: "apply -f dep.yml"
         env:
