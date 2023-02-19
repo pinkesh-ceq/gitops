@@ -133,6 +133,6 @@ jobs:
         run: |
         
          
-         kubectl apply -f django/kubernetes/dep.yml
+         kubectl apply -f django/kubernetes/service.yml
          kubectl get pods
       
