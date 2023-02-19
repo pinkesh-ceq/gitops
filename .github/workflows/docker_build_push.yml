@@ -119,8 +119,8 @@ jobs:
 
 #       - name: Checkout
 #         uses: actions/checkout@v3
-#       - name: Run kubectl
-#         uses: Karandeep0280/gitops@main
+        - name: Run kubectl
+          uses: Karandeep0280/gitops@main
 #         with:
 #           command: "apply -f dep.yml"
 #         env:
