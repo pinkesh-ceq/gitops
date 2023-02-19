@@ -120,8 +120,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Run kubectl
-        uses: Karandeep0280/gitops@main
+        uses: nikosch86/github-action-eks-kubectl@main
         with:
           command: "apply -f dep.yaml"
         env:
-          EKS_CLUSTER: GitOps-poc
+          EKS_CLUSTER: gitops-node-cluster
