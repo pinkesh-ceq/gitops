@@ -94,7 +94,7 @@
 #           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
 #           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
 #           aws_region: $AWS_REGION
-#           cluster_name: $EKS_CLUSTER
+#           cluster_name: $EKS_CLUSTE
 #         with:
 #           args: |
 #             kubectl set image deployment $K8S_DEPLOYMENT -n $K8S_NAMESPACE
