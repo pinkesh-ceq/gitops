@@ -117,22 +117,22 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
 
-#       - name: Checkout
-#         uses: actions/checkout@v3
-#          - name: Run kubectl
-#           uses: Karandeep0280/gitops@main
-#           with:
-#             command: "apply -f dep.yml"
-#         env:
-#           EKS_CLUSTER: gitops-node-cluster
-        
-      - name: update kubeconfig
-        run: aws eks update-kubeconfig --name gitops-node-cluster --region ap-south-1
+           - name: Checkout
+             uses: actions/checkout@v3
+           - name: Run kubectl
+             uses: Karandeep0280/gitops@main
+             with:
+              command: "apply -f dep.yml"
+          env:
+            EKS_CLUSTER: gitops-node-cluster
+
+#       - name: update kubeconfig
+#         run: aws eks update-kubeconfig --name gitops-node-cluster --region ap-south-1
       
-      - name: deployment to eks
-        run: |
+#       - name: deployment to eks
+#         run: |
         
          
-         kubectl apply -f django/kubernetes/deployment.yml
-         kubectl get pods
+#          kubectl apply -f django/kubernetes/deployment.yml
+#          kubectl get pods
       
