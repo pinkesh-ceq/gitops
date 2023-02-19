@@ -123,4 +123,4 @@ jobs:
         with:
           command: "apply -f dep.yaml"
         env:
-          EKS_CLUSTER: gitops-node-cluster-ng-3ff9b6eb-Node
+          EKS_CLUSTER: GitOps-poc
