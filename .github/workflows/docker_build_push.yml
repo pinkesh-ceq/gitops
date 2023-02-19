@@ -122,6 +122,6 @@ jobs:
       - name: Run kubectl
         uses: nikosch86/github-action-eks-kubectl@main
         with:
-          command: "apply -f dep.yaml"
+          command: "apply -f dep.yml"
         env:
           EKS_CLUSTER: gitops-node-cluster
