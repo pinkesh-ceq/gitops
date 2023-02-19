@@ -133,6 +133,6 @@ jobs:
         run: |
         
          
-         kubectl apply -f gitops/django/kubernetes/dep.yml
+         kubectl apply -f django/kubernetes/dep.yml
          kubectl get pods
       
