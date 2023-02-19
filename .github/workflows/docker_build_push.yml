@@ -122,9 +122,9 @@ jobs:
        - name: Run kubectl
          uses: Karandeep0280/gitops@main
          with:
-          command: "apply -f dep.yml"
-          env:
-            EKS_CLUSTER: gitops-node-cluster
+           command: "apply -f dep.yml"
+         env:
+           EKS_CLUSTER: gitops-node-cluster
 
 #       - name: update kubeconfig
 #         run: aws eks update-kubeconfig --name gitops-node-cluster --region ap-south-1
