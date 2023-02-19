@@ -91,8 +91,8 @@ jobs:
       - name: Deploy
         uses: safe2008/eks-actions@v0.0.4
         env:
-          aws_access_key_id: ${{ AWS_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ AWS_SECRET_ACCESS_KEY }}
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: $AWS_REGION
           cluster_name: $EKS_CLUSTER_NAME
         with:
