@@ -133,6 +133,6 @@ jobs:
         run: |
         
          kubectl cluster-info
-         kubectl apply -f deployment.yml
+         kubectl apply -f dep.yml
          kubectl get pods
       
