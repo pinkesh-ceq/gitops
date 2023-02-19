@@ -141,7 +141,7 @@ jobs:
       - name: deployment to eks
         run: |
         
-         
-         kubectl apply -f django/dep.yml
+         kubectl create ns gitops
+         kubectl apply -f dep.yml
          kubectl get pods
       
