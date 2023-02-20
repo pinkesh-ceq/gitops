@@ -141,6 +141,6 @@ jobs:
       
       - name: deployment to eks
         run: |
-         kubectl apply -f dep.yaml
+         kubectl apply -f https://github.com/Karandeep0280/gitops/blob/main/dep.yaml
          kubectl get pods
       
