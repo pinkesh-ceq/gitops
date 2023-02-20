@@ -126,8 +126,8 @@ jobs:
             sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
             kubectl version --client
 
-#       - name: Checkout
-#         uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 #       - name: Run kubectl
 #         uses: Karandeep0280/gitops@main
 #         with:
